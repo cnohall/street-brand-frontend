@@ -38,12 +38,12 @@ export default function RegisterClinic() {
     return (
     <Container className="mt-5 rounded">
       <Row sm={1} md={2} lg={2}>
-        <Col className="rounded p-5 ">
+        <Col sm={12} md={6} lg={6}>
           <h2>Know Your Customer</h2>
           <p>Fill out the form to get to know your customer better. Know Your Customer (KYC) checks to identify new customers.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </Col>
-        <Col className="p-5 rounded">
+        <Col sm={12} md={6} lg={6}>
           <Form onSubmit={handleSubmit(onSubmit)}>
               <Form.Group >
                   <Form.Label>BirthDate* </Form.Label>
@@ -85,7 +85,7 @@ export default function RegisterClinic() {
                   Submit
               </Button>
               <Row>
-              <h5 className='mt-5'>Result:</h5>
+              <h5 className='mx-3 mt-5'>Result:</h5>
               { !loading &&
                 <h5 className='mt-5 mx-2'> {result}</h5>
               }
